@@ -1,0 +1,347 @@
+{
+  "regions": [
+    {
+      "code": "NCR",
+      "psgc": 1300000000,
+      "name": "National Capital Region",
+      "short": "NCR",
+      "island": "Luzon"
+    },
+    {
+      "code": "CAR",
+      "psgc": 1400000000,
+      "name": "Cordillera Administrative Region",
+      "short": "CAR",
+      "island": "Luzon"
+    },
+    {
+      "code": "I",
+      "psgc": 100000000,
+      "name": "Ilocos Region",
+      "short": "Ilocos",
+      "island": "Luzon"
+    },
+    {
+      "code": "II",
+      "psgc": 200000000,
+      "name": "Cagayan Valley",
+      "short": "Cagayan Valley",
+      "island": "Luzon"
+    },
+    {
+      "code": "III",
+      "psgc": 300000000,
+      "name": "Central Luzon",
+      "short": "Central Luzon",
+      "island": "Luzon"
+    },
+    {
+      "code": "IVA",
+      "psgc": 400000000,
+      "name": "CALABARZON",
+      "short": "CALABARZON",
+      "island": "Luzon"
+    },
+    {
+      "code": "MIMAROPA",
+      "psgc": 1700000000,
+      "name": "MIMAROPA",
+      "short": "MIMAROPA",
+      "island": "Luzon"
+    },
+    {
+      "code": "V",
+      "psgc": 500000000,
+      "name": "Bicol Region",
+      "short": "Bicol",
+      "island": "Luzon"
+    },
+    {
+      "code": "VI",
+      "psgc": 600000000,
+      "name": "Western Visayas",
+      "short": "Western Visayas",
+      "island": "Visayas"
+    },
+    {
+      "code": "NIR",
+      "psgc": 1800000000,
+      "name": "Negros Island Region",
+      "short": "Negros Island",
+      "island": "Visayas"
+    },
+    {
+      "code": "VII",
+      "psgc": 700000000,
+      "name": "Central Visayas",
+      "short": "Central Visayas",
+      "island": "Visayas"
+    },
+    {
+      "code": "VIII",
+      "psgc": 800000000,
+      "name": "Eastern Visayas",
+      "short": "Eastern Visayas",
+      "island": "Visayas"
+    },
+    {
+      "code": "IX",
+      "psgc": 900000000,
+      "name": "Zamboanga Peninsula",
+      "short": "Zamboanga",
+      "island": "Mindanao"
+    },
+    {
+      "code": "X",
+      "psgc": 1000000000,
+      "name": "Northern Mindanao",
+      "short": "Northern Mindanao",
+      "island": "Mindanao"
+    },
+    {
+      "code": "XI",
+      "psgc": 1100000000,
+      "name": "Davao Region",
+      "short": "Davao",
+      "island": "Mindanao"
+    },
+    {
+      "code": "XII",
+      "psgc": 1200000000,
+      "name": "SOCCSKSARGEN",
+      "short": "SOCCSKSARGEN",
+      "island": "Mindanao"
+    },
+    {
+      "code": "CARAGA",
+      "psgc": 1600000000,
+      "name": "Caraga",
+      "short": "Caraga",
+      "island": "Mindanao"
+    },
+    {
+      "code": "BARMM",
+      "psgc": 1900000000,
+      "name": "Bangsamoro Autonomous Region in Muslim Mindanao",
+      "short": "BARMM",
+      "island": "Mindanao"
+    }
+  ],
+  "metrics": {
+    "grdp_growth": {
+      "label": "Real GRDP growth",
+      "unit": "%",
+      "preferred": "higher",
+      "source": "grdp",
+      "periods": [
+        "2024",
+        "2025"
+      ],
+      "caption": "Year-on-year growth at constant 2018 prices"
+    },
+    "inflation": {
+      "label": "Annual average inflation",
+      "unit": "%",
+      "preferred": "neutral",
+      "source": "inflation",
+      "periods": [
+        "2025"
+      ],
+      "caption": "All-income households; annual average year-on-year CPI change, 2018=100"
+    },
+    "unemployment": {
+      "label": "Unemployment rate",
+      "unit": "%",
+      "preferred": "lower",
+      "source": "labor",
+      "periods": [
+        "2025-07"
+      ],
+      "caption": "July 2025 preliminary labor force survey; not an annual average"
+    },
+    "poverty": {
+      "label": "Poverty incidence among families",
+      "unit": "%",
+      "preferred": "lower",
+      "source": "poverty",
+      "periods": [
+        "2018",
+        "2021",
+        "2023"
+      ],
+      "caption": "Full-year estimates from FIES; 2023 is latest in this snapshot"
+    }
+  },
+  "sources": {
+    "grdp": {
+      "title": "PSA Regional Accounts of the Philippines, 2024 and 2025 releases",
+      "url": "https://psa.gov.ph/statistics/grdp",
+      "cadence": "Annual",
+      "updated": "2026-04-23",
+      "notes": "GRDP growth at constant 2018 prices. 2024 regional numbers from 2024 PSA release and official regional infographic; 2025 from 2025 PSA release/chart. Some 2024 values are not transcribed and are null."
+    },
+    "inflation": {
+      "title": "PSA 2025 Annual Average Regional Inflation, All-Income Households",
+      "url": "https://rsso08.psa.gov.ph/content/summary-inflation-report-consumer-price-index-all-income-households-2018-base-year-december",
+      "cadence": "Annual",
+      "updated": "2026-01-14",
+      "notes": "Annual average 2025 inflation, not December 2025 point inflation; based on 2018 CPI basket."
+    },
+    "labor": {
+      "title": "PSA July 2025 Labor Force Survey, Regional Employment Indicators",
+      "url": "https://psa.gov.ph/sites/default/files/infographics/July%202025%20LAbor%20Force%20Survey.pdf",
+      "cadence": "Monthly",
+      "updated": "2025-09-01",
+      "notes": "Preliminary July 2025 unemployment rates by region. These are month-specific, not annual statistics."
+    },
+    "poverty": {
+      "title": "PSA 2023 Full Year Official Poverty Statistics, Table 3",
+      "url": "https://psa.gov.ph/sites/default/files/phdsd/2023%20FY%20Official%20PovStat%20Publication%20Report_r2.pdf",
+      "cadence": "FIES survey waves",
+      "updated": "2024-08-15",
+      "notes": "Poverty incidence among families, not persons. 2018/2021 revised regional back-estimates include NIR; use the 2023 publication series."
+    },
+    "geography": {
+      "title": "PSA Philippine Standard Geographic Code, regions (18)",
+      "url": "https://psa.gov.ph/classification/psgc/regions",
+      "cadence": "Administrative updates",
+      "updated": "2025-07-31",
+      "notes": "NIR introduced in 2024; boundary geometry is from faeldon/philippines-json-maps low resolution. It is for regional overview and not a legal boundary reference."
+    }
+  },
+  "values": {
+    "PH|grdp_growth|2024": 5.7,
+    "PH|grdp_growth|2025": 4.4,
+    "NCR|grdp_growth|2025": 4.35,
+    "CAR|grdp_growth|2025": 4.36,
+    "I|grdp_growth|2025": 4.52,
+    "II|grdp_growth|2025": 3.9,
+    "III|grdp_growth|2025": 4.46,
+    "IVA|grdp_growth|2025": 5.1,
+    "MIMAROPA|grdp_growth|2025": 4.2,
+    "V|grdp_growth|2025": 0.5,
+    "VI|grdp_growth|2025": 6.4,
+    "NIR|grdp_growth|2025": 5.699,
+    "VII|grdp_growth|2025": 3.7,
+    "VIII|grdp_growth|2025": 1.0,
+    "IX|grdp_growth|2025": 2.6,
+    "X|grdp_growth|2025": 4.9,
+    "XI|grdp_growth|2025": 5.15,
+    "XII|grdp_growth|2025": 4.8,
+    "CARAGA|grdp_growth|2025": 5.704,
+    "BARMM|grdp_growth|2025": 5.0,
+    "NCR|grdp_growth|2024": 5.59,
+    "CAR|grdp_growth|2024": 4.8,
+    "I|grdp_growth|2024": 4.94,
+    "II|grdp_growth|2024": 5.3,
+    "III|grdp_growth|2024": 6.5,
+    "IVA|grdp_growth|2024": 5.56,
+    "MIMAROPA|grdp_growth|2024": 4.4,
+    "V|grdp_growth|2024": 4.92,
+    "VI|grdp_growth|2024": 4.3,
+    "NIR|grdp_growth|2024": 5.9,
+    "VII|grdp_growth|2024": 7.3,
+    "VIII|grdp_growth|2024": 6.2,
+    "IX|grdp_growth|2024": 4.2,
+    "X|grdp_growth|2024": 6.0,
+    "XI|grdp_growth|2024": 6.3,
+    "CARAGA|grdp_growth|2024": 6.9,
+    "BARMM|grdp_growth|2024": 4.4,
+    "PH|inflation|2025": 1.7,
+    "NCR|inflation|2025": 2.4,
+    "CAR|inflation|2025": 2.1,
+    "I|inflation|2025": 2.2,
+    "II|inflation|2025": 1.7,
+    "III|inflation|2025": 1.4,
+    "IVA|inflation|2025": 2.1,
+    "MIMAROPA|inflation|2025": 1.6,
+    "V|inflation|2025": 1.7,
+    "VI|inflation|2025": 1.5,
+    "NIR|inflation|2025": 1.1,
+    "VII|inflation|2025": 2.5,
+    "VIII|inflation|2025": 0.7,
+    "IX|inflation|2025": 0.7,
+    "X|inflation|2025": 0.5,
+    "XI|inflation|2025": 0.7,
+    "XII|inflation|2025": -0.4,
+    "CARAGA|inflation|2025": 1.1,
+    "BARMM|inflation|2025": -0.9,
+    "NCR|unemployment|2025-07": 4.7,
+    "CAR|unemployment|2025-07": 3.4,
+    "I|unemployment|2025-07": 4.7,
+    "II|unemployment|2025-07": 3.9,
+    "III|unemployment|2025-07": 4.9,
+    "IVA|unemployment|2025-07": 6.6,
+    "MIMAROPA|unemployment|2025-07": 6.0,
+    "V|unemployment|2025-07": 7.7,
+    "VI|unemployment|2025-07": 5.6,
+    "NIR|unemployment|2025-07": 5.7,
+    "VII|unemployment|2025-07": 6.1,
+    "VIII|unemployment|2025-07": 5.3,
+    "IX|unemployment|2025-07": 5.6,
+    "X|unemployment|2025-07": 5.1,
+    "XI|unemployment|2025-07": 3.6,
+    "XII|unemployment|2025-07": 4.4,
+    "CARAGA|unemployment|2025-07": 5.1,
+    "BARMM|unemployment|2025-07": 4.7,
+    "PH|poverty|2018": 12.1,
+    "PH|poverty|2021": 13.2,
+    "PH|poverty|2023": 10.9,
+    "NCR|poverty|2018": 1.4,
+    "NCR|poverty|2021": 2.2,
+    "NCR|poverty|2023": 1.1,
+    "CAR|poverty|2018": 8.6,
+    "CAR|poverty|2021": 6.9,
+    "CAR|poverty|2023": 4.4,
+    "I|poverty|2018": 7.0,
+    "I|poverty|2021": 11.0,
+    "I|poverty|2023": 8.4,
+    "II|poverty|2018": 12.5,
+    "II|poverty|2021": 11.7,
+    "II|poverty|2023": 7.2,
+    "III|poverty|2018": 5.2,
+    "III|poverty|2021": 8.3,
+    "III|poverty|2023": 5.7,
+    "IVA|poverty|2018": 5.1,
+    "IVA|poverty|2021": 7.2,
+    "IVA|poverty|2023": 5.3,
+    "MIMAROPA|poverty|2018": 10.5,
+    "MIMAROPA|poverty|2021": 15.0,
+    "MIMAROPA|poverty|2023": 16.3,
+    "V|poverty|2018": 20.0,
+    "V|poverty|2021": 21.9,
+    "V|poverty|2023": 20.3,
+    "VI|poverty|2018": 10.1,
+    "VI|poverty|2021": 12.1,
+    "VI|poverty|2023": 9.8,
+    "NIR|poverty|2018": 15.8,
+    "NIR|poverty|2021": 18.2,
+    "NIR|poverty|2023": 22.6,
+    "VII|poverty|2018": 12.2,
+    "VII|poverty|2021": 22.0,
+    "VII|poverty|2023": 12.3,
+    "VIII|poverty|2018": 23.9,
+    "VIII|poverty|2021": 22.2,
+    "VIII|poverty|2023": 20.3,
+    "IX|poverty|2018": 25.4,
+    "IX|poverty|2021": 23.4,
+    "IX|poverty|2023": 24.2,
+    "X|poverty|2018": 17.3,
+    "X|poverty|2021": 19.2,
+    "X|poverty|2023": 18.4,
+    "XI|poverty|2018": 13.9,
+    "XI|poverty|2021": 11.9,
+    "XI|poverty|2023": 11.3,
+    "XII|poverty|2018": 21.6,
+    "XII|poverty|2021": 20.9,
+    "XII|poverty|2023": 17.0,
+    "CARAGA|poverty|2018": 24.1,
+    "CARAGA|poverty|2021": 25.9,
+    "CARAGA|poverty|2023": 14.9,
+    "BARMM|poverty|2018": 52.6,
+    "BARMM|poverty|2021": 28.0,
+    "BARMM|poverty|2023": 23.5
+  },
+  "revision": "2026-10-28",
+  "publisher": "Philippine Statistics Authority (PSA); dashboard compiled independently by John Paul Torres"
+}

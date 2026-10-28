@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import {valueAt,observations,rankRegions,stats,regionTrend,comparisonData,csvExport,colorFor} from '../src/lib.js';
+const data=JSON.parse(readFileSync(new URL('../public/data/snapshot.json',import.meta.url),'utf8'));
+test('18 region codes and 18 unique PSGC codes',()=>{assert.equal(data.regions.length,18);assert.equal(new Set(data.regions.map(x=>x.psgc)).size,18);assert.ok(data.regions.some(x=>x.code==='NIR'));});
+test('2025 GRDP full regional coverage, 2024 missing observation preserved',()=>{assert.equal(observations(data,'grdp_growth','2025').filter(x=>x.value!=null).length,18);assert.equal(valueAt(data,'XII','grdp_growth','2024'),null);assert.equal(valueAt(data,'VI','grdp_growth','2025'),6.4)});
+test('inflation includes negative rates without conflation with headline',()=>{assert.equal(valueAt(data,'BARMM','inflation','2025'),-0.9);assert.equal(valueAt(data,'PH','inflation','2025'),1.7);assert.equal(valueAt(data,'PH','inflation','2024'),null)});
+test('rank and filters operate on valid observations',()=>{let rows=observations(data,'unemployment','2025-07','Visayas');assert.equal(rows.length,4);assert.equal(rankRegions(rows)[0].code,'VII');assert.equal(observations(data,'poverty','2023','All','Negros').length,1)});
+test('historical poverty uses survey years, not interpolation',()=>{let t=regionTrend(data,'poverty','NIR');assert.deepEqual(t.map(x=>x.period),['2018','2021','2023']);assert.deepEqual(t.map(x=>x.value),[15.8,18.2,22.6]);});
+test('comparison, csv escaping, color and statistics',()=>{assert.equal(comparisonData(data,'grdp_growth',['VI'])[1].VI,6.4);assert.ok(csvExport([{name:'Test, "A"',psgc:1,island:'Luzon',value:null}],'poverty','2023').includes('"Test, ""A"""'));assert.equal(stats([]).count,0);assert.notEqual(colorFor(1,[0,10]),colorFor(8,[0,10]));});

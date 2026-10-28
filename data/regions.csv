@@ -1,0 +1,19 @@
+code,psgc,name,short,island
+NCR,1300000000,National Capital Region,NCR,Luzon
+CAR,1400000000,Cordillera Administrative Region,CAR,Luzon
+I,100000000,Ilocos Region,Ilocos,Luzon
+II,200000000,Cagayan Valley,Cagayan Valley,Luzon
+III,300000000,Central Luzon,Central Luzon,Luzon
+IVA,400000000,CALABARZON,CALABARZON,Luzon
+MIMAROPA,1700000000,MIMAROPA,MIMAROPA,Luzon
+V,500000000,Bicol Region,Bicol,Luzon
+VI,600000000,Western Visayas,Western Visayas,Visayas
+NIR,1800000000,Negros Island Region,Negros Island,Visayas
+VII,700000000,Central Visayas,Central Visayas,Visayas
+VIII,800000000,Eastern Visayas,Eastern Visayas,Visayas
+IX,900000000,Zamboanga Peninsula,Zamboanga,Mindanao
+X,1000000000,Northern Mindanao,Northern Mindanao,Mindanao
+XI,1100000000,Davao Region,Davao,Mindanao
+XII,1200000000,SOCCSKSARGEN,SOCCSKSARGEN,Mindanao
+CARAGA,1600000000,Caraga,Caraga,Mindanao
+BARMM,1900000000,Bangsamoro Autonomous Region in Muslim Mindanao,BARMM,Mindanao
